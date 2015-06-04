@@ -1,0 +1,94 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 0px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /*background-image: url(../images/backgroud-image.jpg);*/
+    /*background-size: cover;*/
+    /*opacity: 0.5;*/
+    /*filter:alpha(opacity=50);*/
+    text-align: center;
+    background-color: #093C76;
+    transition: width 0.5s;
+    -moz-transition: width 0.5s;	/* Firefox 4 */
+    -webkit-transition: width 0.5s;	/* Safari 和 Chrome */
+    -o-transition: width 0.5s;
+}
+
+#header_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/backgroud-image.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    text-align: center;
+    transition: width 0.5s;
+    -moz-transition: width 0.5s;	/* Firefox 4 */
+    -webkit-transition: width 0.5s;	/* Safari 和 Chrome */
+    -o-transition: width 0.5s;
+}
+
+#header_list {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    /*margin-top: 200px;*/
+    padding-top: 200px;
+    /*width: 30%;*/
+    margin: auto;
+}
+
+#content {
+    padding-left: 500px;
+}
+
+a {
+    color: #00B7FF;
+}
+
+
+.post-list {
+    margin: 0;
+    padding: 30px 20px 20px 20px;
+    list-style-type: none;
+    text-align: left; }
+.post-list li {
+    margin: 0 0 2.2em 0; }
+.post-list li:last-child hr {
+    display: none; }
+
+.post-list__post-title {
+    margin-top: 0;
+    margin-bottom: .2em;
+    font-size: 1.5em;
+    line-height: 1.3em; }
+.post-list__post-title a {
+    color: #333333; }
+.post-list__post-title a:hover {
+    color: #7b0f19; }
+
+.post-list__meta {
+    display: block;
+    margin: .7em 0 0 0;
+    font-size: .9em;
+    color: #c7c7c7; }
+
+.post-list__meta--date {
+    margin-right: .5em;
+    color: #c7c7c7; }
+
+.post-list__meta--tags {
+    margin-left: .5em; }
+
+.post-list__divider {
+    width: 30%;
+    margin: 2.2em 0 2.1em 0;
+    border-top: 1px solid #dddddd; }

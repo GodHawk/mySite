@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>首页</title>
+
+    <link type="text/css" rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <div id="header_background"></div>
+        <div id="header_list">
+            <a id="homeBtn" href="javascript:;" title="返回我的主页">
+                <img src="images/my-icon.png" class="img-circle" style="width: 60px;height: 60px"/>
+            </a>
+            <div class="col-md-12">
+            <h1 style="color: #ffffff">William Liang</h1>
+            </div>
+            <div class="col-md-12">
+            <h4 style="color: #3c3c3c">富则兼济天下,穷则独善其身</h4>
+            </div>
+            <div class="col-md-12">
+            <h5 style="color: #fff">用情怀来做技术</h5>
+            </div>
+            <div class="col-md-12" style="padding-top: 50px">
+            <a id="blogBtn" href="javascript:;" class="btn" title="前往博客页面" style="margin: 10px;color: #fff;border:1px solid #ffffff">博客</a>
+            <a href="javascript:;" class="btn" style="margin: 10px;color: #fff;border:1px solid #ffffff">兴趣</a>
+            <a href="javascript:;" class="btn" style="margin: 10px;color: #fff;border:1px solid #ffffff">关于</a>
+            </div>
+        </div>
+    </header>
+    <div id="content">
+        <div class="main-post-list">
+            <ol class="post-list">
+                <li>
+                    <h2 class="post-list__post-title post-title"><a href="/shen-ru-li-jie-javascript-promise/" title="link to 深入理解Javascript Promise">深入理解Javascript Promise</a></h2>
+                    <p class="excerpt">本文完成进度40% 校稿0% 声明：本文是 JavaScript Promises ... In Wicked Detail 的简体中文版本。 我在我的javascript代码中用promise已经好一整子了，他们一开始绝对会让你抓狂。尽管我现在已经用的很溜了，但是当我对其刨根问底的时候，我发现我并不完全理解他们是如何工作的。这篇文章表达了我的决心。如果你能坚持到最后一个句点，那么你应该也能很好的理解promise了。   我们将会一点点的创建一个非常接近Promises/A+ spec的pro…</p>
+                    <div class="post-list__meta"><time datetime="04 May 2015" class="post-list__meta--date date">04 May 2015</time> • <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href="/shen-ru-li-jie-javascript-promise/">继续阅读</a></div>
+                    <hr class="post-list__divider">
+                </li>
+                <li>
+                    <h2 class="post-list__post-title post-title"><a href="/mongodbhao-yong-de-ormmo-kuai-mongooseru-men-jie-shao/" title="link to MongoDB好用的ORM模块---Mongoose入门介绍">MongoDB好用的ORM模块---Mongoose入门介绍</a></h2>
+                    <p class="excerpt">必须承认MongoDB的官方驱动mongodb其实已经很给力了，但是如果你更喜欢用一些ORM工具，那么mongoose将是一个很好的选择。 先安装 npm install mongoose --save   假设我们有个Article对象，它可以这么定义 var mongoose = require('mongoose');   var Schema = mongoose.Schema;   var ObjectId = Schema.ObjectId;    //这个例子中用不到，但是出于习惯…</p>
+                    <div class="post-list__meta"><time datetime="12 Feb 2015" class="post-list__meta--date date">12 Feb 2015</time> • <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href="/mongodbhao-yong-de-ormmo-kuai-mongooseru-men-jie-shao/">继续阅读</a></div>
+                    <hr class="post-list__divider">
+                </li>
+                <li>
+                    <h2 class="post-list__post-title post-title"><a href="/atombian-ji-qi-cha-jian-ge-ren-tui-jian/" title="link to atom编辑器插件---个人推荐">atom编辑器插件---个人推荐</a></h2>
+                    <p class="excerpt">安装插件包之前必须先安装好vc编译环境，python环境和node环境。 所有的插件都可以到 atom.io/packages 输入名字直接搜索 1--Autocomplete plus 自动补全代码，很方便，但是也有不好的地方，这个插件建立索引只是局限于本文件或者本项目，也就是说，如果你在该文件之前写个某个变量，那么在后面他会提示，但是如果你没写过那么不会提示的，那么肯定是做不到提示某些库的API的，貌似通过自己hack添加provider能够实现，但是我还不会。 2--linter，lint…</p>
+                    <div class="post-list__meta"><time datetime="08 Dec 2014" class="post-list__meta--date date">08 Dec 2014</time> • <span class="post-list__meta--tags tags">于 <a href="/tag/nodejs/">nodejs</a>, <a href="/tag/javascript/">javascript</a></span><a class="btn-border-small" href="/atombian-ji-qi-cha-jian-ge-ren-tui-jian/">继续阅读</a></div>
+                    <hr class="post-list__divider">
+                </li>
+                <li>
+                    <h2 class="post-list__post-title post-title"><a href="/quan-ping-tai-tui-song-fu-wu-pushbullet/" title="link to 全平台推送服务Pushbullet的API开发">全平台推送服务Pushbullet的API开发</a></h2>
+                    <p class="excerpt">Pushbullet  https://www.pushbullet.com/ 简单的说其实就是一个全平台推送服务。提供简单优雅的工具实现全平台的消息共享和推送。能够方便的在你的Android手机，Iphone，和PC上实现消息和通知的共享。 应用场景 先简要介绍一下应用场景，由于本文重点是对pushbullet的开发，所以这部分简单就介绍了 通过下载pushbullet的app，能够将Android或者iPhone手机上的通知同步的显示在你的桌面计算机。能够在你不拿起手机的情况下及时收到信息。…</p>
+                    <div class="post-list__meta"><time datetime="05 Nov 2014" class="post-list__meta--date date">05 Nov 2014</time> • <span class="post-list__meta--tags tags">于 <a href="/tag/nodejs/">nodejs</a>, <a href="/tag/javascript/">javascript</a></span><a class="btn-border-small" href="/quan-ping-tai-tui-song-fu-wu-pushbullet/">继续阅读</a></div>
+                    <hr class="post-list__divider">
+                </li>
+                <li>
+                    <h2 class="post-list__post-title post-title"><a href="/j-flashshao-xie-u-boot/" title="link to J-flash烧写u-boot">J-flash烧写u-boot</a></h2>
+                    <p class="excerpt">简介 由于使用盗版J-link调试器，在Linux下烧写U-boot会导致J-link固件升级失败从而让J-link死掉（点这里看如何恢复死掉的J-link），无奈回到windows下利用SEGGER J-Flash烧写U-boot。 开工 下载SEGGER工具包 ，其实是在找驱动的时候找到的。装好之后插入J-link如果自动识别驱动成功则爽歪歪，不然就要手动配置。驱动成功之后，插上J-link应该绿灯亮了（或闪）。 准备一个编译好的U-boot.bin文件， 这里有一份适合mini2440的U…</p>
+                    <div class="post-list__meta"><time datetime="26 Oct 2014" class="post-list__meta--date date">26 Oct 2014</time> • <span class="post-list__meta--tags tags">于 <a href="/tag/linux/">linux</a>, <a href="/tag/embedded-linux/">Embedded linux</a></span><a class="btn-border-small" href="/j-flashshao-xie-u-boot/">继续阅读</a></div>
+                    <hr class="post-list__divider">
+                </li>
+                <li>
+                    <h2 class="post-list__post-title post-title"><a href="/arm-linux-gcc/" title="link to 嵌入式开发第一篇：工欲善其事，必先利其器——Arm-linux-gcc 交叉编译器">嵌入式开发第一篇：工欲善其事，必先利其器——Arm-linux-gcc 交叉编译器</a></h2>
+                    <p class="excerpt">写在前面 &nbsp; 翻了这么久的嵌入式开发的书，是时候动手了。 &nbsp; 我决定装交叉编译器了，在我的Ubuntu14.04 LTS上。 准备知识 &nbsp; 要想开发arm程序，交叉编译器是必须的，获得交叉编译器的方法有很多，主要有： 手工编译——从gcc,gdb,glibc等等开始，一点一点编译出编译器，中间还需要各种包和头文件等。 通过下载别人制作好的编译链，安装达到目的，这个网上一大堆，自行查找。 剩下的，就是通过别人写的集成工具来生成自己的编译链了。 手工编译 手工编译出自己…</p>
+                    <div class="post-list__meta"><time datetime="23 Oct 2014" class="post-list__meta--date date">23 Oct 2014</time> • <span class="post-list__meta--tags tags">于 <a href="/tag/linux/">linux</a>, <a href="/tag/embedded-linux/">Embedded linux</a></span><a class="btn-border-small" href="/arm-linux-gcc/">继续阅读</a></div>
+                    <hr class="post-list__divider">
+                </li>
+                <li>
+                    <h2 class="post-list__post-title post-title"><a href="/kong-ju-wu-fa-zu-dang/" title="link to 恐惧，无法阻挡">恐惧，无法阻挡</a></h2>
+                    <p class="excerpt">…</p>
+                    <div class="post-list__meta"><time datetime="23 Oct 2014" class="post-list__meta--date date">23 Oct 2014</time> • <span class="post-list__meta--tags tags">于 <a href="/tag/photography/">photography</a>, <a href="/tag/thriller/">thriller</a></span><a class="btn-border-small" href="/kong-ju-wu-fa-zu-dang/">继续阅读</a></div>
+                    <hr class="post-list__divider">
+                </li>
+                <li>
+                    <h2 class="post-list__post-title post-title"><a href="/eclipse/" title="link to Eclipse">Eclipse</a></h2>
+                    <p class="excerpt">Planet Moon…</p>
+                    <div class="post-list__meta"><time datetime="23 Oct 2014" class="post-list__meta--date date">23 Oct 2014</time> • <span class="post-list__meta--tags tags">于 <a href="/tag/photography/">photography</a>, <a href="/tag/eclipse/">Eclipse</a>, <a href="/tag/moon/">moon</a>, <a href="/tag/yue-quan-shi/">月全食</a></span><a class="btn-border-small" href="/eclipse/">继续阅读</a></div>
+                    <hr class="post-list__divider">
+                </li>
+                <li>
+                    <h2 class="post-list__post-title post-title"><a href="/czhong-shi-yong-sqlcao-zuo-accessshu-ju-ku/" title="link to C#中使用SQL操作access数据库">C#中使用SQL操作access数据库</a></h2>
+                    <p class="excerpt">教程 using System.Data.OleDb;   建立连接:  ConnString str = new ConnString();  OleDbConnection cn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + HttpContext.Current.Server.MapPath(".") + "\\data\\xsxx\\xsjbxx.xjz;Jet OLEDB:Databas…</p>
+                    <div class="post-list__meta"><time datetime="18 Oct 2014" class="post-list__meta--date date">18 Oct 2014</time> • <span class="post-list__meta--tags tags">于 <a href="/tag/c/">c#</a>, <a href="/tag/access/">access</a>, <a href="/tag/jiao-cheng/">教程</a></span><a class="btn-border-small" href="/czhong-shi-yong-sqlcao-zuo-accessshu-ju-ku/">继续阅读</a></div>
+                    <hr class="post-list__divider">
+                </li>
+            </ol>
+
+            <hr class="post-list__divider ">
+
+            <nav class="pagination" role="navigation">
+                <span class="pagination__page-number">1 / 2</span>
+                <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/page/2/#blog">更早 →</a>
+            </nav>
+
+        </div>
+    </div>
+<script type="text/javascript" src="javascripts/libs/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="javascripts/libs/bootstrap.min.js"></script>
+<script type="text/javascript">
+     $("#homeBtn").click(function(){
+        $("header").css("width","100%");
+        $("#header_background").css("width","100%");
+     })
+
+     $("#blogBtn").click(function(){
+         $("header").css("width","30%");
+         $("#header_background").css("width","30%");
+     })
+</script>
+</body>
+</html>
