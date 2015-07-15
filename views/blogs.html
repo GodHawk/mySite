@@ -32,12 +32,18 @@
 <div id="content">
     <div class="main-post-list">
         <ol class="post-list">
+            <%
+                var essaies = essaies?essaies:[];
+                for(var i=0;i < essaies.length;i++)
+                    {
+            %>
             <li>
-                <h2 class="post-list__post-title post-title"><a href="/shen-ru-li-jie-javascript-promise/" title="link to 深入理解Javascript Promise">深入理解Javascript Promise</a></h2>
-                <p class="excerpt">本文完成进度40% 校稿0% 声明：本文是 JavaScript Promises ... In Wicked Detail 的简体中文版本。 我在我的javascript代码中用promise已经好一整子了，他们一开始绝对会让你抓狂。尽管我现在已经用的很溜了，但是当我对其刨根问底的时候，我发现我并不完全理解他们是如何工作的。这篇文章表达了我的决心。如果你能坚持到最后一个句点，那么你应该也能很好的理解promise了。   我们将会一点点的创建一个非常接近Promises/A+ spec的pro…</p>
-                <div class="post-list__meta"><time datetime="04 May 2015" class="post-list__meta--date date">04 May 2015</time> • <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href="/shen-ru-li-jie-javascript-promise/">继续阅读</a></div>
+                <h2 class="post-list__post-title post-title"><a href="javascript:"><%=essaies[i].title%></a></h2>
+                <p class="excerpt"><%=essaies[i].content%></p>
+                <div class="post-list__meta"><time datetime="04 May 2015" class="post-list__meta--date date">04 May 2015</time> • <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href="javascript:">继续阅读</a></div>
                 <hr class="post-list__divider">
             </li>
+            <%}%>
         </ol>
 
         <hr class="post-list__divider ">
