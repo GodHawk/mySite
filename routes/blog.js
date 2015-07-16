@@ -27,8 +27,8 @@ var _getEssaies = function(req,res,next){
 
 };
 
-var getEssaies = function(start,rows){
-    return Essay.findAndCountAll({},start,rows,null);
+var getEssaies = function(cond,start,rows){
+    return Essay.findAndCountAll(cond,start,rows,null);
 };
 
 var apiProfile = [

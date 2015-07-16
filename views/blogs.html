@@ -48,19 +48,45 @@
 
         <hr class="post-list__divider ">
 
-        <nav class="pagination" role="navigation">
-            <span class="pagination__page-number">1 / 2</span>
-            <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/page/2/#blog">更早 →</a>
+        <nav id="blogPagination" class="pagination" role="navigation">
+            <!--<span class="pagination__page-number">1 / 2</span>-->
+            <!--<a class="older-posts pagination__older btn btn-small btn-tertiary" href="/page/2/#blog">更早 →</a>-->
         </nav>
 
     </div>
 </div>
 <script type="text/javascript" src="/javascripts/libs/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="/javascripts/libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="/javascripts/libs/bootstrap-paginator.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $("header").css("width","30%");
         $("#header_background").css("width","30%");
+
+        if ($("#blogPagination")) {
+            var itemPerPage =<%= locals.rows %>;
+            var start =<%= locals.start %>;
+            var total =<%= locals.count %>;
+            var currentPage = Math.ceil((start + 1) / itemPerPage);
+            var totalPage = Math.ceil(total / itemPerPage);
+            currentPage = currentPage == 0 ? 1 : currentPage;
+            totalPage = totalPage == 0 ? 1 : totalPage;
+            var options = {
+                currentPage  : currentPage,
+                totalPages   : totalPage,
+                numberOfPages: itemPerPage,
+                size         : "small",
+                alignment    : "right",
+                listContainerClass: "pagination pagination-sm pagi",
+                onPageClicked: function (e, originalEvent, type, page) {
+                    location.href = "/console/blogs?start=" + (page - 1) * itemPerPage
+                            + "&rows=" + itemPerPage;
+                }
+            };
+
+            $('#blogPagination').bootstrapPaginator(options);
+            $('#blogPagination').css({"width": "100%", "padding-right": "20px", "margin": 0,"margin-bottom": "40px"});
+        }
     });
 
 /*    $("#homeBtn").click(function(){
