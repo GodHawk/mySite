@@ -32,6 +32,10 @@ var getEssaies = function(cond,start,rows){
     return Essay.findAndCountAll(cond,start,rows,null);
 };
 
+var getEssayById = function(id){
+    return Essay.findOneAsync({_id:id});
+}
+
 var apiProfile = [
     {
         method     : 'get',
@@ -65,5 +69,6 @@ apiProfile.forEach(function (p) {
 module.exports = {
     router              : router,
     profile             : apiProfile,
-    getEssaies          : getEssaies
+    getEssaies          : getEssaies,
+    getEssayById        : getEssayById
 };

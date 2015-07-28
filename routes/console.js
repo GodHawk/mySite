@@ -19,5 +19,14 @@ app.get('/blogs',function(req,res,next){
         });
 });
 
+app.get('/blogs/:blogId',function(req,res,next){
+    var blogId = req.params["blogId"];
+
+    blogService.getEssayById(blogId)
+        .then(function(essay){
+            res.render('essay.html',{essay:essay});
+        })
+});
+
 
 exports.router = app;
