@@ -28,6 +28,7 @@ var _getEssaies = function(req,res,next){
 };
 
 var getEssaies = function(cond,start,rows){
+    cond.deleted = false;
     return Essay.findAndCountAll(cond,start,rows,null);
 };
 
