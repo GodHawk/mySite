@@ -14,8 +14,8 @@ header {
     text-align: center;
     background-color: #093C76;
     transition: width 0.5s;
-    -moz-transition: width 0.5s;	/* Firefox 4 */
-    -webkit-transition: width 0.5s;	/* Safari 和 Chrome */
+    -moz-transition: width 0.5s; /* Firefox 4 */
+    -webkit-transition: width 0.5s; /* Safari 和 Chrome */
     -o-transition: width 0.5s;
 }
 
@@ -28,11 +28,11 @@ header {
     background-image: url(../images/backgroud-image.jpg);
     background-size: cover;
     opacity: 0.5;
-    filter:alpha(opacity=50);
+    filter: alpha(opacity=50);
     text-align: center;
     transition: width 0.5s;
-    -moz-transition: width 0.5s;	/* Firefox 4 */
-    -webkit-transition: width 0.5s;	/* Safari 和 Chrome */
+    -moz-transition: width 0.5s; /* Firefox 4 */
+    -webkit-transition: width 0.5s; /* Safari 和 Chrome */
     -o-transition: width 0.5s;
 }
 
@@ -54,41 +54,54 @@ a {
     color: #00B7FF;
 }
 
-
 .post-list {
     margin: 0;
     padding: 30px 20px 20px 20px;
     list-style-type: none;
-    text-align: left; }
+    text-align: left;
+}
+
 .post-list li {
-    margin: 0 0 2.2em 0; }
+    margin: 0 0 2.2em 0;
+}
+
 .post-list li:last-child hr {
-    display: none; }
+    display: none;
+}
 
 .post-list__post-title {
     margin-top: 0;
     margin-bottom: .2em;
     font-size: 1.5em;
-    line-height: 1.3em; }
+    line-height: 1.3em;
+}
+
 .post-list__post-title a {
-    color: #333333; }
+    color: #333333;
+}
+
 .post-list__post-title a:hover {
-    color: #7b0f19; }
+    color: #7b0f19;
+}
 
 .post-list__meta {
     display: block;
     margin: .7em 0 0 0;
     font-size: .9em;
-    color: #c7c7c7; }
+    color: #c7c7c7;
+}
 
 .post-list__meta--date {
     margin-right: .5em;
-    color: #c7c7c7; }
+    color: #c7c7c7;
+}
 
 .post-list__meta--tags {
-    margin-left: .5em; }
+    margin-left: .5em;
+}
 
 .post-list__divider {
     width: 30%;
     margin: 2.2em 0 2.1em 0;
-    border-top: 1px solid #dddddd; }
+    border-top: 1px solid #dddddd;
+}
