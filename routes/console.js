@@ -28,5 +28,9 @@ app.get('/blogs/:blogId',function(req,res,next){
         })
 });
 
+app.get('/interest/doraemon',function(req,res,next){
+    res.render('doraemonByCss.html',{});
+});
+
 
 exports.router = app;

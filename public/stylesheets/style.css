@@ -105,3 +105,119 @@ a {
     margin: 2.2em 0 2.1em 0;
     border-top: 1px solid #dddddd;
 }
+
+
+/*doraemon style*/
+.doraemon {
+    position: relative;
+    padding-top: 50px;
+    padding-left: 200px;
+}
+
+.doraemon .head {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    border-radius: 150px;
+    border: 2px solid #555;
+    background: #07bbee;
+    box-shadow: -5px 10px 15px rgba(0,0,0,0.45);
+    background: -webkit-radial-gradient(right top,#fff 10%,#07bbee 20%,#10a6ce 75%,#000);
+    background: -moz-radial-gradient(right top,#fff 10%,#07bbee 20%,#10a6ce 75%,#000);
+    background: -ms-radial-gradient(right top,#fff 10%,#07bbee 20%,#10a6ce 75%,#000);
+}
+
+.doraemon .face {
+    position: relative;
+    z-index: 2;
+}
+
+.doraemon .face .white {
+    width: 265px;
+    height: 195px;
+    border-radius: 150px;
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    background: #fff;
+    background: -webkit-radial-gradient(right top,#fff 75%,#eee 80%,#999 90%,#444);
+    background: -moz-radial-gradient(right top,#fff 75%,#eee 80%,#999 90%,#444);
+    background: -ms-radial-gradient(right top,#fff 75%,#eee 80%,#999 90%,#444);
+}
+
+.doraemon .face .nose {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    background: #c93300;
+    border: 2px solid #000000;
+    z-index: 3;
+    left: 140px;
+    top: 110px;
+}
+
+.doraemon .face .nose .light {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    box-shadow: 15px 8px 5px #fff;
+}
+
+.doraemon .face .nose_line {
+    width:3px;
+    height:100px;
+    background:#333;
+    position:absolute;
+    top:143px;
+    left:155px;
+    z-index:3;
+}
+
+.doraemon .face .mouth {
+    width: 220px;
+    height: 400px;
+    border-bottom: 3px solid #333;
+    border-radius: 120px;
+    z-index:3;
+    position: absolute;
+    top:-155px;
+    left:45px;
+}
+
+.doraemon .eyes {
+    position: relative;
+    z-index: 3;
+}
+
+.doraemon .eyes .eye{
+    width:72px;
+    height:82px;
+    background:#fff;
+    border:2px solid #000;
+    border-radius:35px 35px;
+    position:absolute;
+    top:40px;
+}
+
+.doraemon .eyes .eye .black{
+    width:14px;
+    height:14px;
+    background:#000;
+    border-radius:7px;
+    position:absolute;
+    top:40px;
+}
+.doraemon .eyes .left{
+    left:82px;
+}
+.doraemon .eyes .right {
+    left: 156px;
+}
+.doraemon .eyes .eye .bleft {
+    left: 50px;
+}
+
+.doraemon .eyes .eye .bright {
+    left: 7px;
+}
